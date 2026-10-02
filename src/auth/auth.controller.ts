@@ -11,7 +11,6 @@ export class AuthController {
         if(!token) throw new HttpException('Invalid credentials', HttpStatus.UNAUTHORIZED);
 
         return token;
-        // Implementación de la lógica de autenticación
     }
 }
 

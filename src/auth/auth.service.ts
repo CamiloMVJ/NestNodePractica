@@ -23,7 +23,7 @@ export class AuthService {
       foundUser.password,
     );
 
-    console.log('isPasswordValid:', user.password, foundUser.password, isPasswordValid);
+    // console.log('isPasswordValid:', user.password, foundUser.password, isPasswordValid);
     
     if (isPasswordValid) {
       return this.jwtService.sign({
